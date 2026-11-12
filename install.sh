@@ -13,8 +13,8 @@ echo "🚀 Installing Hermes Bot Mode Ecosystem..."
 mkdir -p "${HERMES_DIR}/profiles" "${HERMES_DIR}/scripts" "${HERMES_DIR}/skills" "${LOCAL_BIN}" "${SKILLS_DIR}"
 
 # 1. Install Profiles
-echo "📁 Deploying 7 Specialist Bot Profiles..."
-for profile in orchestrator researcher builder diagnostics engineer reviewer librarian; do
+echo "📁 Deploying 8 Specialist Bot Profiles..."
+for profile in orchestrator researcher builder diagnostics engineer reviewer librarian security; do
   target="${HERMES_DIR}/profiles/${profile}"
   mkdir -p "${target}"
   cp -r "profiles/${profile}/"* "${target}/"
