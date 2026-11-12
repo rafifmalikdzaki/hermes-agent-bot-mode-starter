@@ -4,4 +4,6 @@ description_auto: false
 ui_meta:
   hermes-bots:
     title: Researcher
-    role: Academic Literature Scout & Deep Researcher
+    role: Academic Literature Scout
+    sectionId: sec-research
+    sectionName: Research & Knowledge

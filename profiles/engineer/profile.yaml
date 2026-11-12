@@ -5,3 +5,5 @@ ui_meta:
   hermes-bots:
     title: Engineer
     role: Systems Infrastructure & NetOps Engineer
+    sectionId: sec-engineering
+    sectionName: Engineering & Systems

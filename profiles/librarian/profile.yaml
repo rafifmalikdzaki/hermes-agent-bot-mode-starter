@@ -4,4 +4,6 @@ description_auto: false
 ui_meta:
   hermes-bots:
     title: Librarian
-    role: Knowledge Vault Curator & Documentation Architect
+    role: Knowledge Vault & Zotero Curator
+    sectionId: sec-research
+    sectionName: Research & Knowledge

@@ -3,4 +3,6 @@ description_auto: false
 ui_meta:
   hermes-bots:
     title: Orchestrator
-    role: Master AI Research Coordinator & Synthesizer
+    role: Master PI & Systems Architect
+    sectionId: sec-research
+    sectionName: Research & Knowledge

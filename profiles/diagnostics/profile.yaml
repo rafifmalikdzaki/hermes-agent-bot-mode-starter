@@ -4,4 +4,6 @@ description_auto: false
 ui_meta:
   hermes-bots:
     title: Diagnostics
-    role: Workstation Telemetry & System Diagnostics Auditor
+    role: Hardware & Agent Telemetry Auditor
+    sectionId: sec-telemetry
+    sectionName: Watchdog & Telemetry

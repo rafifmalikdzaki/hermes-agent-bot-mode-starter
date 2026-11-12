@@ -4,4 +4,6 @@ description_auto: false
 ui_meta:
   hermes-bots:
     title: Security
-    role: Vulnerability Researcher & Adversarial Security Analyst
+    role: Vulnerability Researcher & AppSec Analyst
+    sectionId: sec-engineering
+    sectionName: Engineering & Systems

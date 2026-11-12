@@ -1,6 +1,9 @@
-description: Passive system watchdog, agent inspector, telemetry observer, and background health monitor
+description: Passive system watchdog, agent inspector, telemetry observer, and background
+  health monitor
 description_auto: false
 ui_meta:
   hermes-bots:
     title: Monitor
-    role: Passive Watchdog & Workstation Observer
+    role: Passive Workstation Watchdog & Observer
+    sectionId: sec-telemetry
+    sectionName: Watchdog & Telemetry

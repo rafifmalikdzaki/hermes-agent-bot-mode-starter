@@ -4,4 +4,6 @@ description_auto: false
 ui_meta:
   hermes-bots:
     title: Reviewer
-    role: Adversarial Code Reviewer & Technical Auditor
+    role: Adversarial Tech Lead & Quality Auditor
+    sectionId: sec-engineering
+    sectionName: Engineering & Systems

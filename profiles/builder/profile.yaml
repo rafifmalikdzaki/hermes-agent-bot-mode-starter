@@ -5,3 +5,5 @@ ui_meta:
   hermes-bots:
     title: Builder
     role: ML Systems & Implementation Engineer
+    sectionId: sec-engineering
+    sectionName: Engineering & Systems
