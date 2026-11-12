@@ -13,8 +13,8 @@ echo "🚀 Installing Hermes Bot Mode Ecosystem..."
 mkdir -p "${HERMES_DIR}/profiles" "${HERMES_DIR}/scripts" "${HERMES_DIR}/skills" "${LOCAL_BIN}" "${SKILLS_DIR}"
 
 # 1. Install Profiles
-echo "📁 Deploying 8 Specialist Bot Profiles..."
-for profile in orchestrator researcher builder diagnostics engineer reviewer librarian security; do
+echo "📁 Deploying 9 Specialist Bot Profiles..."
+for profile in orchestrator researcher builder diagnostics engineer reviewer librarian security monitor; do
   target="${HERMES_DIR}/profiles/${profile}"
   mkdir -p "${target}"
   cp -r "profiles/${profile}/"* "${target}/"
@@ -26,6 +26,9 @@ EOF
   chmod +x "${LOCAL_BIN}/${profile}"
   echo "  ✓ Installed profile: ${profile} (command: ${profile})"
 done
+
+# Create observer alias for monitor
+ln -sf "${LOCAL_BIN}/monitor" "${LOCAL_BIN}/observer"
 
 # 2. Install Scripts
 echo "⚙️ Installing Zero-Token CLI Tools..."

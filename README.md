@@ -1,10 +1,10 @@
-# 🤖 Hermes Agent Bot Mode Starter: 8-Specialist Multi-Agent Ecosystem
+# 🤖 Hermes Agent Bot Mode Starter: 9-Specialist Multi-Agent Ecosystem
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Hermes Agent](https://img.shields.io/badge/Hermes_Agent-Bot_Mode-indigo.svg)](https://github.com/NousResearch/hermes-agent)
 [![Zero Token Cost](https://img.shields.io/badge/Zero_Token-Optimized-green.svg)](https://github.com/NousResearch/hermes-agent)
 
-A production-grade multi-agent Bot Mode starter for **[Hermes Agent](https://github.com/NousResearch/hermes-agent)**. Inspired by Callum's (Wanderloots) multi-agent research workflow, this repository moves beyond a single monolithic assistant into a specialized team of **8 dedicated agents**, complete with complementary tool whitelisting, group chat rooms, zero-token watchdogs, headless LibreOffice automation, and autonomous deep research.
+A production-grade multi-agent Bot Mode starter for **[Hermes Agent](https://github.com/NousResearch/hermes-agent)**. Inspired by Callum's (Wanderloots) multi-agent research workflow, this repository moves beyond a single monolithic assistant into a specialized team of **9 dedicated agents**, complete with complementary tool whitelisting, group chat rooms, zero-token watchdogs, headless LibreOffice automation, and autonomous deep research.
 
 ---
 
@@ -30,14 +30,16 @@ graph TD
         Sec -.-> Bld
     end
     
-    subgraph "Workstation Telemetry"
+    subgraph "Workstation Telemetry & Supervision"
         Orch <--> Diag["📊 Diagnostics<br/>(Hardware, GPU, Agent Inspector)"]
         Diag -.-> Bld
         Diag -.-> Eng
+        Orch <--> Mon["👁️ Monitor / Observer<br/>(Passive Watchdog & Anomaly Triage)"]
+        Mon -.-> Diag
     end
 ```
 
-### The 8 Specialized Bots
+### The 9 Specialized Bots
 
 | Profile | CLI Command | Role & Scope | Scoped Toolsets | Key Boundaries |
 | :--- | :--- | :--- | :--- | :--- |
@@ -49,6 +51,7 @@ graph TD
 | **`reviewer`** | `reviewer` | **Adversarial Code Reviewer**<br/>Skeptical tech lead, PR quality auditor, quality gates | `terminal`, `file`, `skills`, `context_engine` | **Audits diffs before merging.** Enforces 5 quality axes. Never rewrites code directly. |
 | **`security`** | `security` | **Vulnerability Researcher & Security Analyst**<br/>SAST/DAST, dependency auditing, exploit assessment | `terminal`, `file`, `skills`, `connections`, `clarify` | **Defense-only.** Audits code for injection vectors, audits container and network isolation. |
 | **`librarian`** | `librarian` | **Knowledge Vault Curator**<br/>Obsidian MOC indexing, Markdown hierarchy, Zotero | `file`, `skills` (`zotero-sync`, `git-guard`, `libreoffice-tools`) | **Vault and literature archivist.** Enforces 100% wikilink resolution, formats BibTeX. |
+| **`monitor`** | `monitor` / `observer` | **Passive Watchdog & Workstation Observer**<br/>Anomaly detection, process health, log watcher | `terminal`, `file`, `skills`, `clarify` | **Passive observation only.** Flags anomalies. Never mutates codebase or state. |
 
 ---
 

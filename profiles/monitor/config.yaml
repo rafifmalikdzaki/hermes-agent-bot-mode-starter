@@ -1,0 +1,35 @@
+model:
+  default: gemini-3.8-flash
+  provider: gemini
+agent:
+  reasoning_effort: low
+  reasoning_overrides:
+    gemini-3.8-flash: low
+    openrouter/free: low
+  bot_mode_protocol: true
+  max_turns: 90
+fallback_model:
+  provider: openrouter
+  model: openrouter/free
+platform_toolsets:
+  cli:
+  - terminal
+  - file
+  - skills
+  - clarify
+  telegram:
+  - clarify
+  - file
+  - terminal
+  discord:
+  - clarify
+  - file
+  - terminal
+  slack:
+  - clarify
+  - file
+  - terminal
+  whatsapp:
+  - clarify
+  - file
+  - terminal
