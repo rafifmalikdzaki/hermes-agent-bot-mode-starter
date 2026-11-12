@@ -34,7 +34,7 @@ platform_toolsets:
   - file
   - terminal
 fallback_providers:
-- provider: gemini
-  model: gemini-3.5-flash
-- provider: openrouter
-  model: openrouter/free
+  - provider: gemini
+    model: gemini-3.5-flash
+  - provider: openrouter
+    model: openrouter/free
