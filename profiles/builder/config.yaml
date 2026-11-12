@@ -1,0 +1,64 @@
+model:
+  default: gemini-3.8-flash
+  provider: gemini
+agent:
+  bot_mode_protocol: true
+  max_turns: 90
+platform_toolsets:
+  cli:
+  - terminal
+  - file
+  - code_execution
+  - skills
+  - context_engine
+  - clarify
+  telegram:
+  - browser
+  - clarify
+  - code_execution
+  - computer_use
+  - connections
+  - context_engine
+  - cronjob
+  - delegation
+  - file
+  - image_gen
+  - memory
+  - session_search
+  - skills
+  - terminal
+  - todo
+  - tts
+  - vision
+  - web
+  discord:
+  - browser
+  - clarify
+  - code_execution
+  - computer_use
+  - connections
+  - context_engine
+  - cronjob
+  - delegation
+  - file
+  - image_gen
+  - memory
+  - session_search
+  - skills
+  - terminal
+  - todo
+  - tts
+  - vision
+  - web
+  whatsapp:
+  - hermes-whatsapp
+  slack:
+  - hermes-slack
+  signal:
+  - hermes-signal
+  homeassistant:
+  - hermes-homeassistant
+  qqbot:
+  - hermes-qqbot
+  yuanbao:
+  - hermes-yuanbao

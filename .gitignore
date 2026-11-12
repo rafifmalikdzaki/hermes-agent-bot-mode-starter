@@ -1,0 +1,32 @@
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.token
+
+# Databases & Runtime State
+*.db
+*.sqlite
+*.sqlite3
+*.sock
+state/
+runtime/
+pairing/
+cron/
+
+# Logs & Caches
+*.log
+logs/
+cache/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,7 @@
+description: Workstation hardware telemetry, GPU thermals/VRAM, agent process inspector,
+  token economics, and zero-token optimization
+description_auto: false
+ui_meta:
+  hermes-bots:
+    title: Diagnostics
+    role: Workstation Telemetry & System Diagnostics Auditor

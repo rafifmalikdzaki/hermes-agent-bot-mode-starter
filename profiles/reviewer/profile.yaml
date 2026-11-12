@@ -1,0 +1,7 @@
+description: Adversarial code reviewer, PR quality auditor, security compliance, test
+  coverage validator, and scientific evidence-led critic
+description_auto: false
+ui_meta:
+  hermes-bots:
+    title: Reviewer
+    role: Adversarial Code Reviewer & Technical Auditor
