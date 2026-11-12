@@ -9,8 +9,8 @@ agent:
   bot_mode_protocol: true
   max_turns: 90
 fallback_model:
-  provider: openrouter
-  model: openrouter/free
+  provider: gemini
+  model: gemini-3.5-flash
 platform_toolsets:
   cli:
   - terminal
@@ -33,3 +33,8 @@ platform_toolsets:
   - clarify
   - file
   - terminal
+fallback_providers:
+- provider: gemini
+  model: gemini-3.5-flash
+- provider: openrouter
+  model: openrouter/free
